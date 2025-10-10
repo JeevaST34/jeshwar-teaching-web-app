@@ -1,0 +1,9 @@
+.carousel-wrapper {
+  overflow: hidden;
+  padding-bottom: 10px;
+  .carousel-track {
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.4s ease;
+  }
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jt - settings</title>
+
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <div class="container-fluid p-0">
+      <div class="row g-0 flex-nowrap">
+        <!-- Fixed Sidebar -->
+        <div class="sidebar" id="sidebar">
+          <div class="p-3 h-100 d-flex flex-column">
+            <a href="../index.html" class="logo">
+              <img
+                src="../Assets/Home_Assets/logo.svg"
+                alt="Logo"
+                class="img-fluid"
+              />
+            </a>
+            <!-- Search bar (Mobile only) -->
+            <div class="position-relative mb-3 d-block d-lg-none">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input
+                type="text"
+                class="form-control search-input"
+                placeholder="Search..."
+              />
+            </div>
+            <!-- nav-link -->
+            <ul class="nav flex-column menu">
+              <li class="nav-item mb-2">
+                <a href="../index.html" class="nav-link"
+                  ><i class="fas fa-home"></i> Dashboard</a
+                >
+              </li>
+
+              <li class="nav-item mb-2">
+                <a href="./batches.html" class="nav-link">
+                  <i class="fa-solid fa-users"></i>
+                  Batches
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./mycourse.html" class="nav-link">
+                  <i class="fa-solid fa-book-open"></i>
+                  My Courses
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./quiz.html" class="nav-link">
+                  <i class="fa-solid fa-list-check"></i>
+
+                  Test
+                </a>
+              </li>
+
+              <li class="nav-item mb-2">
+                <a href="./setting.html" class="nav-link active"
+                  ><i class="fas fa-cog"></i> Settings</a
+                >
+              </li>
+            </ul>
+            <div class="my-auto">
+              <div
+                class="text-center p-3 border-light border-opacity-25 bg-white w-100 text-black mw-50 mx-auto rounded-2"
+              >
+                <img
+                  src="../Assets/Home_Assets/Nav Bar_Image.svg"
+                  alt="Premium"
+                  class="premium-image mb-3"
+                />
+                <h4>Get Premium Now!</h4>
+                <p>Explore our new features by subscribing our package</p>
+                <a href="#" class="base-button">Subscribe</a>
+              </div>
+            </div>
+
+            <div class="menu mt-auto">
+              <a href="./sign-in.html" class="nav-link"
+                ><i class="fa-solid fa-right-from-bracket"></i> Log Out</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content mh-100vh">
+          <div class="container-fluid p-4">
+            <header>
+              <!-- Mobile menu toggle button -->
+              <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div
+                class="d-flex align-items-center justify-content-lg-between justify-content-end mb-lg-4"
+              >
+                <!-- Search bar -->
+                <div
+                  class="position-relative flex-grow-1 me-3 d-none d-lg-block"
+                >
+                  <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                  <input
+                    type="text"
+                    class="form-control search-input"
+                    placeholder="What do you want to learn"
+                  />
+                </div>
+
+                <!-- Icons -->
+                <div class="d-flex align-items-center gap-3 me-3">
+                  <span class="icon-circle">
+                    <i class="fa-regular fa-bell"></i>
+                  </span>
+                </div>
+                <!-- Profile -->
+                <div>
+                  <a
+                    href="./setting.html"
+                    class="d-flex align-items-center gap-2 text-black text-decoration-none curser-pointer"
+                  >
+                    <img
+                      src="../Assets/Home_Assets/Rajesh K.svg"
+                      alt="Profile"
+                      class="profile-img"
+                    />
+                    <span class="fw-semibold">Rajesh K</span>
+                  </a>
+                </div>
+              </div>
+            </header>
+            <section class="mb-2">
+              <div class="mb-2">
+                <div class="hero-section-1 p-4 rounded-4 text-white">
+                  <h2 class="mb-4">
+                    Education empowers. Skill shapes futures.
+                  </h2>
+                  <p class="mb-4 fs-7">
+                    Begin your TNPSC journey with proven strategies and flexible
+                    learning. Learn anytime with live and recorded classes
+                  </p>
+                  <div class="d-flex gap-md-5 gap-3 flex-wrap mb-2">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img
+                        src="../assets/icon/Header Lessons.svg"
+                        alt="header-lessons"
+                        class="img-fluid rounded-pill w-50"
+                      />
+                      <div class="d-flex flex-column lh-sm">
+                        <span class="fs-5 fw-bolder">100+</span>
+                        <span class="fs-6">lessons</span>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img
+                        src="../assets/icon/Header Video Hours.svg"
+                        alt="video hour"
+                        class="img-fluid rounded-pill"
+                        style="width: 66.72px"
+                      />
+                      <div class="d-flex flex-column lh-sm">
+                        <span class="fs-5 fw-bolder">60+</span>
+                        <span class="fs-6">video hours</span>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img
+                        src="../assets/icon/Header Courses.svg"
+                        alt="course"
+                        class="img-fluid rounded-pill w-50"
+                      />
+                      <div class="d-flex flex-column lh-sm">
+                        <span class="fs-5 fw-bolder">10+</span>
+                        <span class="fs-6">courses</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="mb-3">
+              <div class="py-3">
+                <h3 class="icon-primary">Settings</h3>
+                <p class="fs-6 p-0 m-0">
+                  Manage your account settings and preferences
+                </p>
+              </div>
+              <div class="tabs-container">
+                <div class="tabs-header bg-white mb-3">
+                  <div class="tab active" data-tab="tab-1">Profile</div>
+                  <div class="tab" data-tab="tab-2">Accounts</div>
+                </div>
+
+                <div class="tab-content">
+                  <!-- Profile Tab -->
+                  <div class="tab-pane active" id="tab-1">
+                    <div class="tab-box border">
+                      <h5 class="icon-primary">Profile Information</h5>
+                      <p class="fs-6 p-0 m-0 text-muted">
+                        Update your profile information and public details
+                      </p>
+                      <div class="row mt-4">
+                        <div class="col-md-3 mx-auto d-flex flex-column mb-2">
+                          <img
+                            src="../assets/home_assets/Rajesh K.svg"
+                            class="rounded-pill img-fluid mx-auto"
+                            alt="profile"
+                            style="width: 150px"
+                          />
+                          <a
+                            class="border w-fit mx-auto mt-3 p-2 rounded-2 curser-pointer text-decoration-none text-black"
+                          >
+                            <i class="fa-solid fa-upload me-1"></i>
+                            Change Photo
+                          </a>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="row">
+                            <div class="col-md-6 d-flex flex-column gap-2 mb-3">
+                              <label for="firstName" class="fs-6 text-black"
+                                >First Name</label
+                              >
+                              <input
+                                type="text"
+                                id="firstName"
+                                placeholder="Enter your first name"
+                                class="flex-fill d-block fs-6 p-2 border rounded-2"
+                              />
+                            </div>
+                            <div class="col-md-6 d-flex flex-column gap-2 mb-3">
+                              <label for="lastName" class="fs-6 text-black"
+                                >Last Name</label
+                              >
+                              <input
+                                type="text"
+                                id="lastName"
+                                placeholder="Enter your last name"
+                                class="flex-fill d-block fs-6 p-2 border rounded-2"
+                              />
+                            </div>
+                            <div class="col-md-6 d-flex flex-column gap-2 mb-3">
+                              <label for="email" class="fs-6 text-black"
+                                >Email</label
+                              >
+                              <input
+                                type="email"
+                                id="Email"
+                                placeholder="Enter your Email"
+                                class="flex-fill d-block fs-6 p-2 border rounded-2"
+                              />
+                            </div>
+                            <div class="col-md-6 d-flex flex-column gap-2 mb-3">
+                              <label for="lastName" class="fs-6 text-black"
+                                >Role</label
+                              >
+                              <input
+                                type="text"
+                                id="role"
+                                placeholder="Enter your Role "
+                                class="flex-fill d-block fs-6 p-2 border rounded-2"
+                              />
+                            </div>
+                            <div
+                              class="col-md-12 d-flex flex-column gap-2 mb-3"
+                            >
+                              <label for="lastName" class="fs-6 text-black"
+                                >Bio</label
+                              >
+                              <textarea
+                                placeholder="Your Bio... "
+                                class="flex-fill d-block fs-6 p-2 border rounded-2"
+                              ></textarea>
+                            </div>
+                          </div>
+                          <a href="#" class="base-button w-fit ms-md-auto me-2"
+                            >Save changes</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Accounts Tab -->
+                  <div class="tab-pane" id="tab-2">
+                    <div class="tab-box border mb-3">
+                      <h5 class="icon-primary">Account Security</h5>
+                      <p class="fs-6 p-0 m-0 text-muted">
+                        Update your password and security settings
+                      </p>
+                      <div class="row mt-3">
+                        <div class="col-md-6 gap-2 mb-3">
+                          <div class="d-flex flex-column mb-2">
+                            <label for="firstName" class="fs-6 text-black"
+                              >Current Password</label
+                            >
+                            <input
+                              type="password"
+                              id="firstName"
+                              placeholder="Enter your Current Password"
+                              class="flex-fill d-block fs-6 p-2 border rounded-2"
+                            />
+                          </div>
+                          <div class="d-flex flex-column mb-2">
+                            <label for="firstName" class="fs-6 text-black"
+                              >New Password</label
+                            >
+                            <input
+                              type="password"
+                              id="firstName"
+                              placeholder="Enter your New Password"
+                              class="flex-fill d-block fs-6 p-2 border rounded-2"
+                            />
+                          </div>
+                          <div class="d-flex flex-column mb-2">
+                            <label for="firstName" class="fs-6 text-black"
+                              >Confirm New Password</label
+                            >
+                            <input
+                              type="password"
+                              id="firstName"
+                              placeholder="Conform your New Password"
+                              class="flex-fill d-block fs-6 p-2 border rounded-2"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="base-button w-fit">Update Password</a>
+                    </div>
+                    <div class="tab-box border">
+                      <h4 class="text-danger">Danger Zone</h4>
+                      <p class="fs-6 p-0 m-0 text-muted mb-1">
+                        Irreversible actions for your account
+                      </p>
+                      <div class="tab-box bg-lightred border">
+                        <h6 class="text-danger fw-bolder">Delete Account</h6>
+                        <p class="fs-6 p-0 m-0 mb-2 text-muted">
+                          Once you delete your account, there is no going back.
+                          All your data will be permanently removed
+                        </p>
+                        <a href="#" class="btn btn-danger w-fit"
+                          >Delete Account</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../app.js"></script>
+  </body>
+</html>

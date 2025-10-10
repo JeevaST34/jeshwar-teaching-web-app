@@ -1,0 +1,32 @@
+html,
+body {
+  background-color: #f5f7fa;
+  font-family: "Outfit", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  height: 100%;
+}
+
+.mh-100vh {
+  min-height: 100vh;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.fs-7 {
+  font-size: 0.8rem !important;
+}
+
+.border:focus-visible {
+  outline: var(--primary-color) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.bg-lightred {
+  background: #feeded !important;
+}

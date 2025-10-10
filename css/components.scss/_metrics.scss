@@ -1,0 +1,23 @@
+.metrics-section {
+  background-color: var(--primary-lightest-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.metrics-card {
+  background: linear-gradient(
+    180deg,
+    var(--primary-color) 50%,
+    var(--secondary-color) 100%
+  );
+  color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.metrics-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,94 @@
+.login-box {
+  width: 100%;
+  max-width: 500px;
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 8px;
+    color: #222;
+    font-weight: 600;
+  }
+  p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+  }
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  form {
+    label {
+      display: block;
+      text-align: left;
+      font-size: 14px;
+      margin: 10px 0 6px;
+      color: var(----primary-dark);
+    }
+
+    .input-box {
+      position: relative;
+
+      input {
+        width: 100%;
+        padding: 15px 20px;
+        padding-right: 40px;
+        border: 1px solid #f5f5f7;
+        border-radius: 6px;
+        font-size: 14px;
+        outline: none;
+        transition: border 0.3s, box-shadow 0.3s;
+
+        &:focus {
+          border-color: var(--primary-color);
+          box-shadow: 0 0 5px rgba(77, 77, 162, 0.5);
+        }
+      }
+
+      .toggle {
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 16px;
+        color: #666;
+        cursor: pointer;
+      }
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  }
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #777;
+    margin: 20px 0;
+
+    &::before,
+    &::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #ddd;
+    }
+
+    &:not(:empty)::before {
+      margin-right: 0.75em;
+    }
+
+    &:not(:empty)::after {
+      margin-left: 0.75em;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+// ===========================
+// quiz.scss (optimized)
+// ===========================
+
+// Quiz Container
+.quiz-container {
+  background: #fff;
+  border-radius: 10px;
+}
+
+// Points Badge
+
+// Timer
+.timer {
+  font-weight: 600;
+  color: #ef4444;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+// Question Text
+.question-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+// Option Buttons
+.option-btn {
+  background: #f8fafc;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.option-btn:hover {
+  background: #e0e7ff;
+  border-color: #5c5bc0;
+}
+
+.option-btn.active {
+  background: #5c5bc0;
+  color: #fff;
+}
+
+// Option Label
+.option-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #5c5bc0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.option-btn.active .option-label {
+  background: #fff;
+  color: #5c5bc0;
+}
+
+// Option Text
+.option-text {
+  flex: 1;
+}
+
+// Next Button
+.next-btn {
+  background: #5c5bc0;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s ease;
+}
+
+.next-btn:hover {
+  background: #4a49a6;
+  color: #fff;
+}

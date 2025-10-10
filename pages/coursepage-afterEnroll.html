@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jt - AfterEnroll</title>
+
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <div class="container-fluid p-0">
+      <div class="row g-0 flex-nowrap">
+        <!-- Fixed Sidebar -->
+        <div class="sidebar" id="sidebar">
+          <div class="p-3 h-100 d-flex flex-column">
+            <a href="../index.html" class="logo">
+              <img
+                src="../Assets/Home_Assets/logo.svg"
+                alt="Logo"
+                class="img-fluid"
+              />
+            </a>
+            <!-- Search bar (Mobile only) -->
+            <div class="position-relative mb-3 d-block d-lg-none">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input
+                type="text"
+                class="form-control search-input"
+                placeholder="Search..."
+              />
+            </div>
+            <!-- nav-link -->
+            <ul class="nav flex-column menu">
+              <li class="nav-item mb-2">
+                <a href="../index.html" class="nav-link"
+                  ><i class="fas fa-home"></i> Dashboard</a
+                >
+              </li>
+
+              <li class="nav-item mb-2">
+                <a href="./batches.html" class="nav-link">
+                  <i class="fa-solid fa-users"></i>
+                  Batches
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./mycourse.html" class="nav-link active">
+                  <i class="fa-solid fa-book-open"></i>
+                  My Courses
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./quiz.html" class="nav-link">
+                  <i class="fa-solid fa-list-check"></i>
+                  Test
+                </a>
+              </li>
+
+              <li class="nav-item mb-2">
+                <a href="./setting.html" class="nav-link"
+                  ><i class="fas fa-cog"></i> Settings</a
+                >
+              </li>
+            </ul>
+            <div class="my-auto">
+              <div
+                class="text-center p-3 border-light border-opacity-25 bg-white w-100 text-black mw-50 mx-auto rounded-2"
+              >
+                <img
+                  src="../Assets/Home_Assets/Nav Bar_Image.svg"
+                  alt="Premium"
+                  class="premium-image mb-3"
+                />
+                <h4>Get Premium Now!</h4>
+                <p>Explore our new features by subscribing our package</p>
+                <a href="#" class="base-button">Subscribe</a>
+              </div>
+            </div>
+
+            <div class="menu mt-auto">
+              <a href="./sign-in.html" class="nav-link"
+                ><i class="fa-solid fa-right-from-bracket"></i> Log Out</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content mh-100vh">
+          <div class="container-fluid p-4">
+            <header>
+              <!-- Mobile menu toggle button -->
+              <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div
+                class="d-flex align-items-center justify-content-lg-between justify-content-end mb-lg-4"
+              >
+                <!-- Search bar -->
+                <div
+                  class="position-relative flex-grow-1 me-3 d-none d-lg-block"
+                >
+                  <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                  <input
+                    type="text"
+                    class="form-control search-input"
+                    placeholder="What do you want to learn"
+                  />
+                </div>
+
+                <!-- Icons -->
+                <div class="d-flex align-items-center gap-3 me-3">
+                  <span class="icon-circle">
+                    <i class="fa-regular fa-bell"></i>
+                  </span>
+                </div>
+                <!-- Profile -->
+                <div>
+                  <a
+                    href="./setting.html"
+                    class="d-flex align-items-center gap-2 text-black text-decoration-none curser-pointer"
+                  >
+                    <img
+                      src="../Assets/Home_Assets/Rajesh K.svg"
+                      alt="Profile"
+                      class="profile-img"
+                    />
+                    <span class="fw-semibold">Rajesh K</span>
+                  </a>
+                </div>
+              </div>
+            </header>
+            <section class="mb-5">
+              <div class="mb-2">
+                <div class="hero-section-1 p-4 rounded-4 text-white">
+                  <h2 class="mb-4">
+                    Education empowers. Skill shapes futures.
+                  </h2>
+                  <p class="mb-4 fs-7">
+                    Begin your TNPSC journey with proven strategies and flexible
+                    learning. Learn anytime with live and recorded classes
+                  </p>
+                  <div class="d-flex gap-md-5 gap-3 flex-wrap mb-2">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img
+                        src="../assets/icon/Header Lessons.svg"
+                        alt="header-lessons"
+                        class="img-fluid rounded-pill w-50"
+                      />
+                      <div class="d-flex flex-column lh-sm">
+                        <span class="fs-5 fw-bolder">100+</span>
+                        <span class="fs-6">lessons</span>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img
+                        src="../assets/icon/Header Video Hours.svg"
+                        alt="video hour"
+                        class="img-fluid rounded-pill"
+                        style="width: 66.72px"
+                      />
+                      <div class="d-flex flex-column lh-sm">
+                        <span class="fs-5 fw-bolder">60+</span>
+                        <span class="fs-6">video hours</span>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img
+                        src="../assets/icon/Header Courses.svg"
+                        alt="course"
+                        class="img-fluid rounded-pill w-50"
+                      />
+                      <div class="d-flex flex-column lh-sm">
+                        <span class="fs-5 fw-bolder">10+</span>
+                        <span class="fs-6">courses</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="mb-5">
+              <div class="video-container">
+                <div class="video-player">
+                  <div class="video-image w-100">
+                    <img
+                      src="../assets/home_assets/Video placeholder.svg"
+                      alt="video-pic"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="video-controls">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 25%"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <!-- Controls -->
+                    <div class="controls">
+                      <div class="left-controls">
+                        <button class="control-btn">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-backward-step"></i>
+                          <i class="fa-solid fa-forward-step"></i>
+                        </button>
+                        <div class="speed">1.5x</div>
+                        <div class="time">12:34 / 45:12</div>
+                      </div>
+
+                      <div class="right-controls">
+                        <button class="control-btn">
+                          <i class="fa-solid fa-volume-high"></i>
+                        </button>
+                        <button class="control-btn">
+                          <i class="fa-solid fa-closed-captioning"></i>
+                        </button>
+                        <button class="control-btn">
+                          <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <button class="control-btn">
+                          <i class="fa-solid fa-expand"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="mb-5">
+              <div class="row">
+                <div class="col-md-8 m-0">
+                  <div>
+                    <div class="tabs-container">
+                      <div class="tabs-header bg-white mb-3">
+                        <div class="tab active" data-tab="tab-1">
+                          <i class="fa-solid fa-list-check me-1"></i>
+                          Overview
+                        </div>
+                        <div class="tab" data-tab="tab-2">
+                          <i class="fa-solid fa-circle-play me-1"></i>
+                          Modules
+                        </div>
+                        <div class="tab" data-tab="tab-3">
+                          <i class="fa-solid fa-video me-1"></i>
+                          Live Sessions
+                        </div>
+                      </div>
+
+                      <div class="tab-content">
+                        <!-- Overview Tab -->
+                        <div class="tab-pane active" id="tab-1">
+                          <div class="tab-box mb-3">
+                            <h4 class="mb-4">Course OverView</h4>
+                            <p>
+                              The Complete Batch for TNPSC Group 4 & VAO is a
+                              specially designed, full-fledged course that
+                              provides end-to-end preparation for aspirants
+                              aiming for Tamil Nadu government jobs under Group
+                              4 services and Village Administrative Officer
+                              (VAO) posts.
+                            </p>
+                            <p>
+                              Whether you're a first-time aspirant or someone
+                              looking to improve past performance, this batch
+                              equips you with conceptual clarity, practice-based
+                              learning, revision support, and expert guidance –
+                              all aligned with the latest TNPSC syllabus and
+                              exam pattern.
+                            </p>
+                            <p>
+                              Prepare confidently for TNPSC Group 4 & VAO exams
+                              with our all-in-one complete batch designed for
+                              both beginners and repeat aspirants.
+                            </p>
+                          </div>
+                          <div class="tab-box mb-3">
+                            <h4 class="mb-4">What You'll Learn</h4>
+                            <div class="row">
+                              <div class="col-lg-6">
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Master General Tamil – grammar,
+                                    comprehension, and literature (SSLC
+                                    standard)</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >In-depth knowledge of General Studies –
+                                    History, Polity, Geography, Economy &
+                                    Science</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Focused prep for Tamil Nadu-specific topics
+                                    – culture, administration, and social
+                                    movements</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Develop smart answering strategies and time
+                                    management skills</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="col-lg-6">
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Master General Tamil – grammar,
+                                    comprehension, and literature (SSLC
+                                    standard)</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >In-depth knowledge of General Studies –
+                                    History, Polity, Geography, Economy &
+                                    Science</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Focused prep for Tamil Nadu-specific topics
+                                    – culture, administration, and social
+                                    movements</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Develop smart answering strategies and time
+                                    management skills</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-box mb-3">
+                            <h4 class="mb-4">Who's This Course For</h4>
+                            <div>
+                              <div
+                                class="d-flex align-items-baseline gap-2 mb-2"
+                              >
+                                <div>
+                                  <i
+                                    class="fa-solid fa-graduation-cap icon-primary"
+                                  ></i>
+                                </div>
+                                <div class="d-flex flex-column">
+                                  <span class="fw-bolder"
+                                    >Complete Beginners</span
+                                  >
+                                  <span class="text-muted"
+                                    >No prior programming experience required.
+                                    Start from scratch and build your way
+                                    up.</span
+                                  >
+                                </div>
+                              </div>
+                              <div
+                                class="d-flex align-items-baseline gap-2 mb-2"
+                              >
+                                <div>
+                                  <i class="fa-solid fa-code icon-primary"></i>
+                                </div>
+                                <div class="d-flex flex-column">
+                                  <span class="fw-bolder">Career Changers</span>
+                                  <span class="text-muted"
+                                    >Looking to transition into tech? This
+                                    course provides the foundation you
+                                    need.</span
+                                  >
+                                </div>
+                              </div>
+                              <div
+                                class="d-flex align-items-baseline gap-2 mb-2"
+                              >
+                                <div>
+                                  <i
+                                    class="fa-solid fa-laptop-code icon-primary"
+                                  ></i>
+                                </div>
+                                <div class="d-flex flex-column">
+                                  <span class="fw-bolder"
+                                    >Self-Taught Developers</span
+                                  >
+                                  <span class="text-muted"
+                                    >Fill in knowledge gaps and learn industry
+                                    best practices.</span
+                                  >
+                                </div>
+                              </div>
+                              <div
+                                class="d-flex align-items-baseline gap-2 mb-2"
+                              >
+                                <div>
+                                  <i
+                                    class="fa-solid fa-briefcase icon-primary"
+                                  ></i>
+                                </div>
+                                <div class="d-flex flex-column">
+                                  <span class="fw-bolder"
+                                    >Aspiring Freelancers</span
+                                  >
+                                  <span class="text-muted"
+                                    >Build the skills needed to start your own
+                                    web development business.</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- modules Tab -->
+                        <div class="tab-pane" id="tab-2">
+                          <div class="tab-box mb-3">
+                            <h4 class="mb-4">Course OverView</h4>
+                            <p>
+                              The Complete Batch for TNPSC Group 4 & VAO is a
+                              specially designed, full-fledged course that
+                              provides end-to-end preparation for aspirants
+                              aiming for Tamil Nadu government jobs under Group
+                              4 services and Village Administrative Officer
+                              (VAO) posts.
+                            </p>
+                            <p>
+                              Whether you're a first-time aspirant or someone
+                              looking to improve past performance, this batch
+                              equips you with conceptual clarity, practice-based
+                              learning, revision support, and expert guidance –
+                              all aligned with the latest TNPSC syllabus and
+                              exam pattern.
+                            </p>
+                            <p>
+                              Prepare confidently for TNPSC Group 4 & VAO exams
+                              with our all-in-one complete batch designed for
+                              both beginners and repeat aspirants.
+                            </p>
+                          </div>
+                          <div class="tab-box mb-3">
+                            <h4 class="mb-4">What You'll Learn</h4>
+                            <div class="row">
+                              <div class="col-lg-6">
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Master General Tamil – grammar,
+                                    comprehension, and literature (SSLC
+                                    standard)</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >In-depth knowledge of General Studies –
+                                    History, Polity, Geography, Economy &
+                                    Science</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Focused prep for Tamil Nadu-specific topics
+                                    – culture, administration, and social
+                                    movements</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Develop smart answering strategies and time
+                                    management skills</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="col-lg-6">
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Master General Tamil – grammar,
+                                    comprehension, and literature (SSLC
+                                    standard)</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >In-depth knowledge of General Studies –
+                                    History, Polity, Geography, Economy &
+                                    Science</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Focused prep for Tamil Nadu-specific topics
+                                    – culture, administration, and social
+                                    movements</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Develop smart answering strategies and time
+                                    management skills</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-box mb-3">
+                            <h4 class="mb-4">Who's This Course For</h4>
+                            <div>
+                              <div
+                                class="d-flex align-items-baseline gap-2 mb-2"
+                              >
+                                <div>
+                                  <i
+                                    class="fa-solid fa-graduation-cap icon-primary"
+                                  ></i>
+                                </div>
+                                <div class="d-flex flex-column">
+                                  <span class="fw-bolder"
+                                    >Complete Beginners</span
+                                  >
+                                  <span class="text-muted"
+                                    >No prior programming experience required.
+                                    Start from scratch and build your way
+                                    up.</span
+                                  >
+                                </div>
+                              </div>
+                              <div
+                                class="d-flex align-items-baseline gap-2 mb-2"
+                              >
+                                <div>
+                                  <i class="fa-solid fa-code icon-primary"></i>
+                                </div>
+                                <div class="d-flex flex-column">
+                                  <span class="fw-bolder">Career Changers</span>
+                                  <span class="text-muted"
+                                    >Looking to transition into tech? This
+                                    course provides the foundation you
+                                    need.</span
+                                  >
+                                </div>
+                              </div>
+                              <div
+                                class="d-flex align-items-baseline gap-2 mb-2"
+                              >
+                                <div>
+                                  <i
+                                    class="fa-solid fa-laptop-code icon-primary"
+                                  ></i>
+                                </div>
+                                <div class="d-flex flex-column">
+                                  <span class="fw-bolder"
+                                    >Self-Taught Developers</span
+                                  >
+                                  <span class="text-muted"
+                                    >Fill in knowledge gaps and learn industry
+                                    best practices.</span
+                                  >
+                                </div>
+                              </div>
+                              <div
+                                class="d-flex align-items-baseline gap-2 mb-2"
+                              >
+                                <div>
+                                  <i
+                                    class="fa-solid fa-briefcase icon-primary"
+                                  ></i>
+                                </div>
+                                <div class="d-flex flex-column">
+                                  <span class="fw-bolder"
+                                    >Aspiring Freelancers</span
+                                  >
+                                  <span class="text-muted"
+                                    >Build the skills needed to start your own
+                                    web development business.</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- session Tab -->
+                        <div class="tab-pane" id="tab-3">
+                          <div class="tab-box mb-3">
+                            <h4 class="mb-4">What You'll Learn</h4>
+                            <div class="row">
+                              <div class="col-lg-6">
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Master General Tamil – grammar,
+                                    comprehension, and literature (SSLC
+                                    standard)</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >In-depth knowledge of General Studies –
+                                    History, Polity, Geography, Economy &
+                                    Science</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Focused prep for Tamil Nadu-specific topics
+                                    – culture, administration, and social
+                                    movements</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Develop smart answering strategies and time
+                                    management skills</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="col-lg-6">
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Master General Tamil – grammar,
+                                    comprehension, and literature (SSLC
+                                    standard)</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >In-depth knowledge of General Studies –
+                                    History, Polity, Geography, Economy &
+                                    Science</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Focused prep for Tamil Nadu-specific topics
+                                    – culture, administration, and social
+                                    movements</span
+                                  >
+                                </div>
+                                <div class="d-flex gap-2 mb-1">
+                                  <span>
+                                    <i
+                                      class="fa-solid fa-check text-success"
+                                    ></i
+                                  ></span>
+                                  <span
+                                    >Develop smart answering strategies and time
+                                    management skills</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 m-0" id="sidebarContent">
+                  <div id="overviewSidebarContent" class="d-none">
+                    <div class="tab-box mb-3">
+                      <h6 class="mb-2">Course Information</h6>
+                      <div>
+                        <div
+                          class="d-flex align-items-center justify-content-between mb-2"
+                        >
+                          <div
+                            class="d-flex gap-2 justify-content-between align-items-center"
+                          >
+                            <div>
+                              <i class="fa-solid fa-clock icon-primary"></i>
+                            </div>
+                            <div>Duration</div>
+                          </div>
+                          <div>40 hours</div>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <div
+                            class="d-flex gap-2 justify-content-between align-items-center"
+                          >
+                            <div>
+                              <i class="fa-solid fa-play icon-primary"></i>
+                            </div>
+                            <div>Lectures</div>
+                          </div>
+                          <div>180</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-card bg-white rounded-2 mb-3">
+                      <div class="card-image">
+                        <img
+                          src="../Assets/Home_Assets/card-image.svg"
+                          alt="banner"
+                          class="img-fluid w-100 rounded-2"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="fs-7 text-muted">by Rajesh K</p>
+                        <h5 class="fw-bold mb-2">
+                          Complete batch for Group 4 & VAO
+                        </h5>
+                        <div class="d-flex justify-content-between mb-1">
+                          <div>
+                            <span
+                              ><i
+                                class="fa-solid fa-folder-closed icon-primary"
+                              ></i
+                            ></span>
+                            <span class="fs-7">100+ Modules</span>
+                          </div>
+                          <div>
+                            <span
+                              ><i class="fa-solid fa-clock icon-primary"></i
+                            ></span>
+                            <span class="fs-7">7 Weeks</span>
+                          </div>
+                        </div>
+                        <hr />
+
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-muted mb-2">₹29.0</p>
+                          <button class="base-button">View Details</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-card bg-white rounded-2 mb-3">
+                      <div class="card-image">
+                        <img
+                          src="../Assets/Home_Assets/card-image.svg"
+                          alt="banner"
+                          class="img-fluid w-100 rounded-2"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="fs-7 text-muted">by Rajesh K</p>
+                        <h5 class="fw-bold mb-2">
+                          Complete batch for Group 4 & VAO
+                        </h5>
+                        <div class="d-flex justify-content-between mb-1">
+                          <div>
+                            <span
+                              ><i
+                                class="fa-solid fa-folder-closed icon-primary"
+                              ></i
+                            ></span>
+                            <span class="fs-7">100+ Modules</span>
+                          </div>
+                          <div>
+                            <span
+                              ><i class="fa-solid fa-clock icon-primary"></i
+                            ></span>
+                            <span class="fs-7">7 Weeks</span>
+                          </div>
+                        </div>
+                        <hr />
+
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-muted mb-2">₹29.0</p>
+                          <button class="base-button">View Details</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="modulesSidebarContent" class="d-none tab-box">
+                    <div class="mb-4">
+                      <h4 class="fw-semibold mb-4">Course Content</h4>
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-2 fw-medium"
+                      >
+                        <h5>Course Progress</h5>
+                        <span class="fw-bold">25%</span>
+                      </div>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 25%"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <!-- unit-1 -->
+                      <div class="unit-card mb-1">
+                        <div class="unit-header" onclick="toggleSection(this)">
+                          <div class="mb-2">
+                            <div>
+                              <p class="fs-6 mb-0 fw-semibold">
+                                Unit 1 : Physics
+                              </p>
+                              <span class="fs-7 fw-normal"
+                                >3/4 lessons • 45 min</span
+                              >
+                            </div>
+                          </div>
+                          <i class="fas fa-chevron-up"></i>
+                        </div>
+
+                        <ul class="p-0 unit-content show">
+                          <li
+                            class="content-item py-1 px-2 mb-1 completed active"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">
+                                  Light, Motion, Magnetism
+                                </p>
+                                <span class="item-duration">15 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <i
+                                class="fa-solid fa-circle-check text-success"
+                              ></i>
+                            </div>
+                          </li>
+                          <li class="content-item py-1 px-2 mb-1 completed">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">Thermodynamics</p>
+                                <span class="item-duration">12 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <i
+                                class="fa-solid fa-circle-check text-success"
+                              ></i>
+                            </div>
+                          </li>
+                          <li class="content-item py-1 px-2 mb-1 completed">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">
+                                  Waves and Oscillations
+                                </p>
+                                <span class="item-duration">18 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <i
+                                class="fa-solid fa-circle-check text-success"
+                              ></i>
+                            </div>
+                          </li>
+                          <li class="content-item py-1 px-2 mb-1 completed">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">Fluid Mechanics</p>
+                                <span class="item-duration">20 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <a href="./quiz.html" class="base-button fs-7"
+                                >Test</a
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- unit-2 -->
+                      <div class="unit-card mb-1">
+                        <div class="unit-header" onclick="toggleSection(this)">
+                          <div class="mb-2">
+                            <div>
+                              <p class="fs-6 mb-0 fw-semibold">
+                                Unit 1 : Physics
+                              </p>
+                              <span class="fs-7 fw-normal"
+                                >3/4 lessons • 45 min</span
+                              >
+                            </div>
+                          </div>
+                          <i class="fas fa-chevron-down"></i>
+                        </div>
+
+                        <ul class="p-0 unit-content">
+                          <li
+                            class="content-item py-1 px-2 mb-1 completed active"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">
+                                  Light, Motion, Magnetism
+                                </p>
+                                <span class="item-duration">15 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <i
+                                class="fa-solid fa-circle-check text-success"
+                              ></i>
+                            </div>
+                          </li>
+                          <li class="content-item py-1 px-2 mb-1 completed">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">Thermodynamics</p>
+                                <span class="item-duration">12 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <i
+                                class="fa-solid fa-circle-check text-success"
+                              ></i>
+                            </div>
+                          </li>
+                          <li class="content-item py-1 px-2 mb-1 completed">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">
+                                  Waves and Oscillations
+                                </p>
+                                <span class="item-duration">18 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <i
+                                class="fa-solid fa-circle-check text-success"
+                              ></i>
+                            </div>
+                          </li>
+                          <li class="content-item py-1 px-2 mb-1 completed">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">Fluid Mechanics</p>
+                                <span class="item-duration">20 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <a href="./quiz.html" class="base-button fs-7"
+                                >Test</a
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- unit-3 -->
+                      <div class="unit-card mb-1">
+                        <div class="unit-header" onclick="toggleSection(this)">
+                          <div class="mb-2">
+                            <div>
+                              <p class="fs-6 mb-0 fw-semibold">
+                                Unit 1 : Physics
+                              </p>
+                              <span class="fs-7 fw-normal"
+                                >3/4 lessons • 45 min</span
+                              >
+                            </div>
+                          </div>
+                          <i class="fas fa-chevron-down"></i>
+                        </div>
+
+                        <ul class="p-0 unit-content">
+                          <li
+                            class="content-item py-1 px-2 mb-1 completed active"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">
+                                  Light, Motion, Magnetism
+                                </p>
+                                <span class="item-duration">15 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <i
+                                class="fa-solid fa-circle-check text-success"
+                              ></i>
+                            </div>
+                          </li>
+                          <li class="content-item py-1 px-2 mb-1 completed">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">Thermodynamics</p>
+                                <span class="item-duration">12 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <i
+                                class="fa-solid fa-circle-check text-success"
+                              ></i>
+                            </div>
+                          </li>
+                          <li class="content-item py-1 px-2 mb-1 completed">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">
+                                  Waves and Oscillations
+                                </p>
+                                <span class="item-duration">18 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <i
+                                class="fa-solid fa-circle-check text-success"
+                              ></i>
+                            </div>
+                          </li>
+                          <li class="content-item py-1 px-2 mb-1 completed">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">Fluid Mechanics</p>
+                                <span class="item-duration">20 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <a href="./quiz.html" class="base-button fs-7"
+                                >Test</a
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- unit-4 -->
+                      <div class="unit-card mb-1">
+                        <div class="unit-header" onclick="toggleSection(this)">
+                          <div class="mb-2">
+                            <div>
+                              <p class="fs-6 mb-0 fw-semibold">
+                                Unit 1 : Physics
+                              </p>
+                              <span class="fs-7 fw-normal"
+                                >3/4 lessons • 45 min</span
+                              >
+                            </div>
+                          </div>
+                          <i class="fas fa-chevron-down"></i>
+                        </div>
+
+                        <ul class="p-0 unit-content">
+                          <li
+                            class="content-item py-1 px-2 mb-1 completed active"
+                          >
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">
+                                  Light, Motion, Magnetism
+                                </p>
+                                <span class="item-duration">15 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <i
+                                class="fa-solid fa-circle-check text-success"
+                              ></i>
+                            </div>
+                          </li>
+                          <li class="content-item py-1 px-2 mb-1 completed">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">Thermodynamics</p>
+                                <span class="item-duration">12 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <i
+                                class="fa-solid fa-circle-check text-success"
+                              ></i>
+                            </div>
+                          </li>
+                          <li class="content-item py-1 px-2 mb-1 completed">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">
+                                  Waves and Oscillations
+                                </p>
+                                <span class="item-duration">18 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <i
+                                class="fa-solid fa-circle-check text-success"
+                              ></i>
+                            </div>
+                          </li>
+                          <li class="content-item py-1 px-2 mb-1 completed">
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <i class="fas fa-play-circle me-2"></i>
+                              </div>
+                              <div>
+                                <p class="p-0 fs-7 m-0">Fluid Mechanics</p>
+                                <span class="item-duration">20 min</span>
+                              </div>
+                            </div>
+                            <div>
+                              <a href="./quiz.html" class="base-button fs-7"
+                                >Test</a
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="sessionSidebarContent" class="d-none">
+                    <div class="course-card bg-white rounded-2 mb-3">
+                      <div class="card-image">
+                        <img
+                          src="../Assets/Home_Assets/card-image.svg"
+                          alt="banner"
+                          class="img-fluid w-100 rounded-2"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="fs-7 text-muted">by Rajesh K</p>
+                        <h5 class="fw-bold mb-2">
+                          Complete batch for Group 4 & VAO
+                        </h5>
+                        <div class="d-flex justify-content-between mb-1">
+                          <div>
+                            <span
+                              ><i
+                                class="fa-solid fa-folder-closed icon-primary"
+                              ></i
+                            ></span>
+                            <span class="fs-7">100+ Modules</span>
+                          </div>
+                          <div>
+                            <span
+                              ><i class="fa-solid fa-clock icon-primary"></i
+                            ></span>
+                            <span class="fs-7">7 Weeks</span>
+                          </div>
+                        </div>
+                        <hr />
+
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-muted mb-2">₹29.0</p>
+                          <button class="base-button">View Details</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../app.js"></script>
+    <script></script>
+  </body>
+</html>

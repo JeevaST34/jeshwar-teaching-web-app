@@ -1,0 +1,37 @@
+// abstract
+@import "./_abstract.scss/variables";
+
+// base
+@import "./_base.scss/global.scss";
+
+// component
+
+// authentication-pages
+
+@import "./components.scss/auth-layout.scss";
+@import "./components.scss/signIn.scss";
+@import "./components.scss/create-acc.scss";
+@import "./components.scss/otp-generate.scss";
+
+// page
+@import "./components.scss/sidebar.scss";
+@import "./components.scss/header";
+@import "./components.scss/hero.scss";
+@import "./components.scss/button.scss";
+@import "./components.scss/icon.scss";
+@import "./components.scss/progress.scss";
+@import "./components.scss/stat-card.scss";
+@import "./components.scss/metrics.scss";
+@import "./components.scss/course-card.scss";
+@import "./components.scss/carousel.scss";
+@import "./components.scss/course-sidebar.scss";
+@import "./components.scss/select-box.scss";
+@import "./components.scss/quiz.scss";
+@import "./components.scss/video.scss";
+
+// tabbed-navigate
+@import "./components.scss/tabbed.scss";
+@import "./components.scss/accordian.scss";
+
+// responsive
+@import "./_utilities.scss/responsive.scss";

@@ -1,0 +1,74 @@
+.hero-section-1 {
+  background-image: url("../assets/home_assets/Star.svg"),
+    linear-gradient(
+      180deg,
+      var(--primary-dark-color) 0%,
+      var(--primary-color) 100%
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  p {
+    max-width: 650px;
+  }
+  button {
+    color: var(--primary-color);
+    background: white;
+    &:hover {
+      color: white;
+      background: var(--primary-color) !important;
+      span {
+        background: white !important;
+        color: var(--primary-color);
+      }
+    }
+
+    span {
+      color: white;
+      background: var(--primary-color) !important;
+      width: 30px;
+      height: 30px;
+      &:hover {
+        background: white !important;
+        color: var(--primary-color);
+      }
+    }
+  }
+}
+
+.hero-section-2 {
+  background-image: url("../assets/home_assets/right-sidebar.png "),
+    linear-gradient(
+      180deg,
+      var(--primary-dark-color) 0%,
+      var(--primary-color) 100%
+    );
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+
+  button {
+    color: var(--primary-color);
+    background: white;
+    &:hover {
+      color: white;
+      background: var(--primary-color) !important;
+      span {
+        background: white !important;
+        color: var(--primary-color);
+      }
+    }
+
+    span {
+      color: white;
+      background: var(--primary-color) !important;
+      width: 30px;
+      height: 30px;
+      &:hover {
+        background: white !important;
+        color: var(--primary-color);
+      }
+    }
+  }
+}

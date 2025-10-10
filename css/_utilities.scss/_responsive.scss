@@ -1,0 +1,131 @@
+@media (min-width: 993px) {
+  .menu-toggle,
+  .overlay {
+    display: none;
+  }
+
+  .sidebar {
+    width: 20%;
+  }
+
+  .main-content {
+    margin-left: 20%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
+    background: #fff;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-content {
+    padding-top: 70px;
+  }
+
+  .sidebar {
+    width: 280px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    display: block;
+    z-index: 200;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 15px;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+  .logo {
+    padding-top: 28% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .auth-right {
+    align-items: unset;
+    justify-content: unset;
+    gap: 40px;
+  }
+  .login-box {
+    margin: 0 auto;
+  }
+  .speed,
+  .time {
+    font-size: 0.8rem;
+  }
+}
+/* For mobile screens */
+@media screen and (max-width: 576px) {
+  .tabs-header {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 10px;
+  }
+
+  .tab {
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 12px;
+  }
+
+  .tab.active {
+    border-left: 4px solid var(--primary-color);
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
+
+@media (max-width: 480px) {
+  .control-btn {
+    font-size: 1rem;
+  }
+
+  .speed,
+  .time {
+    font-size: 0.75rem;
+  }
+
+  .controls {
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .left-controls,
+  .right-controls {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+}

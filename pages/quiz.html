@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jt - Test</title>
+
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <div class="container-fluid p-0">
+      <div class="row g-0 flex-nowrap">
+        <!-- Fixed Sidebar -->
+        <div class="sidebar" id="sidebar">
+          <div class="p-3 h-100 d-flex flex-column">
+            <a href="../index.html" class="logo">
+              <img
+                src="../Assets/Home_Assets/logo.svg"
+                alt="Logo"
+                class="img-fluid"
+              />
+            </a>
+            <!-- Search bar (Mobile only) -->
+            <div class="position-relative mb-3 d-block d-lg-none">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input
+                type="text"
+                class="form-control search-input"
+                placeholder="Search..."
+              />
+            </div>
+            <!-- nav-link -->
+            <ul class="nav flex-column menu">
+              <li class="nav-item mb-2">
+                <a href="../index.html" class="nav-link"
+                  ><i class="fas fa-home"></i> Dashboard</a
+                >
+              </li>
+
+              <li class="nav-item mb-2">
+                <a href="./batches.html" class="nav-link">
+                  <i class="fa-solid fa-users"></i>
+                  Batches
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./mycourse.html" class="nav-link">
+                  <i class="fa-solid fa-book-open"></i>
+                  My Courses
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./quiz.html" class="nav-link active">
+                  <i class="fa-solid fa-list-check"></i>
+                  Test
+                </a>
+              </li>
+
+              <li class="nav-item mb-2">
+                <a href="./setting.html" class="nav-link"
+                  ><i class="fas fa-cog"></i> Settings</a
+                >
+              </li>
+            </ul>
+            <div class="my-auto">
+              <div
+                class="text-center p-3 border-light border-opacity-25 bg-white w-100 text-black mw-50 mx-auto rounded-2"
+              >
+                <img
+                  src="../Assets/Home_Assets/Nav Bar_Image.svg"
+                  alt="Premium"
+                  class="premium-image mb-3"
+                />
+                <h4>Get Premium Now!</h4>
+                <p>Explore our new features by subscribing our package</p>
+                <a href="#" class="base-button">Subscribe</a>
+              </div>
+            </div>
+
+            <div class="menu mt-auto">
+              <a href="./sign-in.html" class="nav-link"
+                ><i class="fa-solid fa-right-from-bracket"></i> Log Out</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content mh-100vh">
+          <div class="container-fluid p-4">
+            <header>
+              <!-- Mobile menu toggle button -->
+              <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div
+                class="d-flex align-items-center justify-content-lg-between justify-content-end mb-lg-4"
+              >
+                <!-- Search bar -->
+                <div
+                  class="position-relative flex-grow-1 me-3 d-none d-lg-block"
+                >
+                  <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                  <input
+                    type="text"
+                    class="form-control search-input"
+                    placeholder="What do you want to learn"
+                  />
+                </div>
+
+                <!-- Icons -->
+                <div class="d-flex align-items-center gap-3 me-3">
+                  <span class="icon-circle">
+                    <i class="fa-regular fa-bell"></i>
+                  </span>
+                </div>
+                <!-- Profile -->
+                <div>
+                  <a
+                    href="./setting.html"
+                    class="d-flex align-items-center gap-2 text-black text-decoration-none curser-pointer"
+                  >
+                    <img
+                      src="../Assets/Home_Assets/Rajesh K.svg"
+                      alt="Profile"
+                      class="profile-img"
+                    />
+                    <span class="fw-semibold">Rajesh K</span>
+                  </a>
+                </div>
+              </div>
+            </header>
+            <section class="mb-2">
+              <div class="mb-2">
+                <div class="hero-section-1 p-4 rounded-4 text-white">
+                  <h2 class="mb-4">
+                    Education empowers. Skill shapes futures.
+                  </h2>
+                  <p class="mb-4 fs-7">
+                    Begin your TNPSC journey with proven strategies and flexible
+                    learning. Learn anytime with live and recorded classes
+                  </p>
+                  <div class="d-flex gap-md-5 gap-3 flex-wrap mb-2">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img
+                        src="../assets/icon/Header Lessons.svg"
+                        alt="header-lessons"
+                        class="img-fluid rounded-pill w-50"
+                      />
+                      <div class="d-flex flex-column lh-sm">
+                        <span class="fs-5 fw-bolder">100+</span>
+                        <span class="fs-6">lessons</span>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img
+                        src="../assets/icon/Header Video Hours.svg"
+                        alt="video hour"
+                        class="img-fluid rounded-pill"
+                        style="width: 66.72px"
+                      />
+                      <div class="d-flex flex-column lh-sm">
+                        <span class="fs-5 fw-bolder">60+</span>
+                        <span class="fs-6">video hours</span>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img
+                        src="../assets/icon/Header Courses.svg"
+                        alt="course"
+                        class="img-fluid rounded-pill w-50"
+                      />
+                      <div class="d-flex flex-column lh-sm">
+                        <span class="fs-5 fw-bolder">10+</span>
+                        <span class="fs-6">courses</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="p-3">
+              <div class="mb-3">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-1"
+                >
+                  <p class="text-muted mb-0">Question 1 of 10</p>
+                  <p class="text-muted mb-0">10% Complete</p>
+                </div>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 10%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="quiz-container container-fluid mt-2 p-4 row">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-4 col-md-6"
+                >
+                  <span class="points-badge">100 points</span>
+                  <div class="timer d-flex align-items-center gap-2">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>00:00</span>
+                  </div>
+                </div>
+
+                <h6 class="question-text mb-2">
+                  Which of the following energy sources cannot be replenished
+                  naturally on a human timescale, making it an example of a
+                  non-renewable resource?
+                </h6>
+              </div>
+
+              <div class="row g-3 mt-3">
+                <div class="col-md-6">
+                  <button
+                    class="option-btn w-100 d-flex align-items-center bg-white gap-2"
+                  >
+                    <span class="option-label">A</span>
+                    <span class="option-text">Solar Power</span>
+                  </button>
+                </div>
+                <div class="col-md-6">
+                  <button
+                    class="option-btn w-100 d-flex align-items-center bg-white gap-2"
+                  >
+                    <span class="option-label">B</span>
+                    <span class="option-text">Wind Power</span>
+                  </button>
+                </div>
+                <div class="col-md-6">
+                  <button
+                    class="option-btn w-100 d-flex align-items-center bg-white gap-2"
+                  >
+                    <span class="option-label">C</span>
+                    <span class="option-text">Natural Gas</span>
+                  </button>
+                </div>
+                <div class="col-md-6">
+                  <button
+                    class="option-btn w-100 d-flex align-items-center bg-white gap-2"
+                  >
+                    <span class="option-label">D</span>
+                    <span class="option-text">Hydroelectric Power</span>
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="d-flex justify-content-between align-items-center mt-4"
+              >
+                <a href="#" class="text-muted text-decoration-none"
+                  ><i class="fa-regular fa-flag"></i> Skip</a
+                >
+                <button class="btn next-btn d-flex align-items-center gap-1">
+                  Next Question <i class="fa-solid fa-caret-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../app.js"></script>
+  </body>
+</html>

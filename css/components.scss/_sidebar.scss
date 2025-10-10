@@ -1,0 +1,58 @@
+.sidebar {
+  background: var(--primary-color);
+  color: white;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  z-index: 100;
+
+  // Hide scrollbar
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .logo {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .menu {
+    a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      padding: 12px 15px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+
+      &:hover,
+      &.active {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      i {
+        margin-right: 12px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .nav-link {
+    &:hover {
+      color: unset;
+    }
+  }
+
+  .premium-image {
+    width: 70%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+  }
+}

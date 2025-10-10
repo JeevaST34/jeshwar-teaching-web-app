@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <h<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>confirmation</title>
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../app.css">
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <div class="container-fluid p-0 d-flex h-100 flex-md-row">
+      <div class="auth-left d-md-flex d-none">
+        <div class="pic-content mt-auto">
+          <img
+            src="../assets/home_assets/logo.svg"
+            alt="Logo"
+            class="img-fluid mb-3"
+          />
+          <h2>Improve your skill with Jeshwar Teaching!</h2>
+          <p>
+            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+            impedit quo minus id quod maxime placeat facere possimus, omnis
+            voluptas assumenda est,
+          </p>
+        </div>
+      </div>
+      <div class="auth-right">
+        <img
+          src="../assets/home_assets/logo.svg"
+          alt="Logo"
+          class="img-fluid mb-3 w-25 d-block d-md-none"
+        />
+        <div class="form-box text-center resend-box">
+          <!-- Lock icon -->
+          <div class="icon-box">
+            <img src="../assets/icon/lock.svg" alt="lock">
+          </div>
+
+          <h2>Enter confirmation code</h2>
+          <p class="mb-5">We sent a code to name@gmail.com</p>
+
+          <div class="otp-container">
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+          </div>
+          <div class="resend">
+            <p>Didn't receive the code? <a href="#">click to resend</a></p>
+          </div>
+          <a href="./sign-in.html" class="confirm-login d-flex gap-2 justify-content-center align-items-center">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>back to login</span>
+          </a>
+          <a href="new-password.html" class="base-button text-white fw-normal w-100 mt-3">Submit</a>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

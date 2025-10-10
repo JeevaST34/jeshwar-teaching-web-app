@@ -1,0 +1,19 @@
+.accordion-button:not(.collapsed) {
+  color: var(--primary-color) !important;
+  background-color: var(--primary-lightest-color) !important;
+  box-shadow: 0 0 0 0.15rem var(--primary-dark-color, rgba(0, 0, 0, 0.15)) !important;
+}
+
+.accordion-button:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 0.15rem var(--primary-dark-color, rgba(0, 0, 0, 0.15)) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../assets/accordion-arrow.svg") !important;
+  transform: rotate(180deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: none;
+}

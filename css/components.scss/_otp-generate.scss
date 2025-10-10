@@ -1,0 +1,47 @@
+.otp-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 50px 0;
+
+  input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    &:focus {
+      outline: none;
+      border-color: #4d4da2;
+      box-shadow: 0 0 5px rgba(77, 77, 162, 0.5);
+    }
+  }
+}
+
+.resend-box {
+  p {
+    font-size: 14px;
+    color: #252525;
+    margin-bottom: 30px;
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.confirm-login {
+  text-decoration: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  span:hover {
+    text-decoration: underline;
+  }
+}

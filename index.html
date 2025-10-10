@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jt - Dashboard</title>
+
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <div class="container-fluid p-0">
+      <div class="row g-0 flex-nowrap">
+        <!-- Fixed Sidebar -->
+        <div class="sidebar" id="sidebar">
+          <div class="p-3 h-100 d-flex flex-column">
+            <a href="./index.html" class="logo">
+              <img
+                src="./Assets/Home_Assets/logo.svg"
+                alt="Logo"
+                class="img-fluid"
+              />
+            </a>
+            <!-- Search bar (Mobile only) -->
+            <div class="position-relative mb-3 d-block d-lg-none">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input
+                type="text"
+                class="form-control search-input"
+                placeholder="Search..."
+              />
+            </div>
+            <!-- nav-link -->
+            <ul class="nav flex-column menu">
+              <li class="nav-item mb-2">
+                <a href="index.html" class="nav-link active"
+                  ><i class="fas fa-home"></i> Dashboard</a
+                >
+              </li>
+
+              <li class="nav-item mb-2">
+                <a href="./pages/batches.html" class="nav-link">
+                  <i class="fa-solid fa-users"></i>
+                  Batches
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./pages/mycourse.html" class="nav-link">
+                  <i class="fa-solid fa-book-open"></i>
+                  My Courses
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./pages/quiz.html" class="nav-link">
+                  <i class="fa-solid fa-list-check"></i>
+                  Test
+                </a>
+              </li>
+
+              <li class="nav-item mb-2">
+                <a href="./pages/setting.html" class="nav-link"
+                  ><i class="fas fa-cog"></i> Settings</a
+                >
+              </li>
+            </ul>
+            <div class="my-auto">
+              <div
+                class="text-center p-3 border-light border-opacity-25 bg-white w-100 text-black mw-50 mx-auto rounded-2"
+              >
+                <img
+                  src="./Assets/Home_Assets/Nav Bar_Image.svg"
+                  alt="Premium"
+                  class="premium-image mb-3"
+                />
+                <h4>Get Premium Now!</h4>
+                <p>Explore our new features by subscribing our package</p>
+                <a href="#" class="base-button">Subscribe</a>
+              </div>
+            </div>
+
+            <div class="menu mt-auto">
+              <a href="./pages/sign-in.html" class="nav-link"
+                ><i class="fa-solid fa-right-from-bracket"></i> Log Out</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content mh-100vh">
+          <div class="container-fluid p-4">
+            <header>
+              <!-- Mobile menu toggle button -->
+              <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div
+                class="d-flex align-items-center justify-content-lg-between justify-content-end mb-lg-4"
+              >
+                <!-- Search bar -->
+                <div
+                  class="position-relative flex-grow-1 me-3 d-none d-lg-block"
+                >
+                  <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                  <input
+                    type="text"
+                    class="form-control search-input"
+                    placeholder="What do you want to learn"
+                  />
+                </div>
+
+                <!-- Icons -->
+                <div class="d-flex align-items-center gap-3 me-3">
+                  <span class="icon-circle">
+                    <i class="fa-regular fa-bell"></i>
+                  </span>
+                </div>
+                <!-- Profile -->
+                <div>
+                  <a
+                    href="./pages/setting.html"
+                    class="d-flex align-items-center gap-2 text-black text-decoration-none curser-pointer"
+                  >
+                    <img
+                      src="./Assets/Home_Assets/Rajesh K.svg"
+                      alt="Profile"
+                      class="profile-img"
+                    />
+                    <span class="fw-semibold">Rajesh K</span>
+                  </a>
+                </div>
+              </div>
+            </header>
+            <section class="mb-5">
+              <div class="row">
+                <div class="col-xl-8 col-lg-7 col-md-6 d-flex mb-2">
+                  <div
+                    class="hero-section-1 p-4 rounded-4 text-white flex-fill"
+                  >
+                    <h2 class="mb-4">
+                      Education empowers. Skill shapes futures.
+                    </h2>
+                    <p class="mb-4 fs-7">
+                      Begin your TNPSC journey with proven strategies and
+                      flexible learning. Learn anytime with live and recorded
+                      classes
+                    </p>
+                    <button
+                      class="base-button d-flex gap-2 rounded-pill align-items-center justify-content-center bg-white"
+                    >
+                      Join Now
+                      <span class="icon-circle"
+                        ><i class="fa-solid fa-chevron-right"></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-5 col-md-6 d-flex mb-2">
+                  <div
+                    class="hero-section-2 p-4 rounded-4 text-white flex-fill d-flex flex-column"
+                  >
+                    <h3 class="mb-3">COURSES</h3>
+                    <p class="mb-4 fs-7" style="max-width: 200px">
+                      Industry Ready Training to get you placed
+                    </p>
+                    <button
+                      class="base-button d-flex gap-2 rounded-pill align-items-center justify-content-center bg-white mt-auto w-fit"
+                    >
+                      View Courses
+                      <span class="icon-circle"
+                        ><i class="fa-solid fa-chevron-right"></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="mb-4">
+              <div class="row g-3">
+                <div class="col-md-6 col-xl-3">
+                  <div class="stat-card p-4 d-flex flex-column">
+                    <div
+                      class="d-flex align-items-center justify-content-start gap-3 mb-4"
+                    >
+                      <div>
+                        <img
+                          src="./Assets/Home_Assets/Course completed.svg"
+                          alt="course completed"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div>
+                        <div class="stat-number">14</div>
+                        <div class="stat-label">Course completed</div>
+                      </div>
+                    </div>
+                    <div class="mt-auto d-flex align-items-center gap-2">
+                      <div class="progress custom-progress">
+                        <div
+                          class="progress-bar bg-primary rounded-pill"
+                          role="progressbar"
+                          style="width: 70%"
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <span class="progress-percent">70%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                  <div class="stat-card p-4 d-flex flex-column">
+                    <div
+                      class="d-flex align-items-center justify-content-start gap-3 mb-4"
+                    >
+                      <div>
+                        <img
+                          src="./Assets/Home_Assets/Course in progress.svg"
+                          alt="course completed"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div>
+                        <div class="stat-number">06</div>
+                        <div class="stat-label">Course in progress</div>
+                      </div>
+                    </div>
+                    <div class="mt-auto d-flex align-items-center gap-2">
+                      <div class="progress custom-progress">
+                        <div
+                          class="progress-bar bg-warning rounded-pill"
+                          role="progressbar"
+                          style="width: 30%"
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <span class="progress-percent">30%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                  <div class="stat-card p-4 d-flex flex-column">
+                    <div
+                      class="d-flex align-items-center justify-content-start gap-3 mb-4"
+                    >
+                      <div>
+                        <img
+                          src="./Assets/Home_Assets/Certificate earned.svg"
+                          alt="course completed"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div>
+                        <div class="stat-number">470</div>
+                        <div class="stat-label">Certificate earned</div>
+                      </div>
+                    </div>
+                    <div class="mt-auto d-flex align-items-center gap-2">
+                      <div class="progress custom-progress">
+                        <div
+                          class="progress-bar bg-danger rounded-pill"
+                          role="progressbar"
+                          style="width: 20%"
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <span class="progress-percent">20%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                  <div class="stat-card p-4 d-flex flex-column">
+                    <div
+                      class="d-flex align-items-center justify-content-start gap-3 mb-4"
+                    >
+                      <div>
+                        <img
+                          src="./Assets/Home_Assets/Assessments.svg"
+                          alt="course completed"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div>
+                        <div class="stat-number">20</div>
+                        <div class="stat-label">Assessment</div>
+                      </div>
+                    </div>
+                    <div class="mt-auto d-flex align-items-center gap-2">
+                      <div class="progress custom-progress">
+                        <div
+                          class="progress-bar bg-success rounded-pill"
+                          role="progressbar"
+                          style="width: 20%"
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <span class="progress-percent">20%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="metrics-section p-4 mb-5">
+              <div class="row g-3">
+                <div class="col-lg-6 col-xxl-3 d-flex">
+                  <div class="metrics-card p-4 flex-fill d-flex flex-column">
+                    <i class="fa-solid fa-user-group fs-5 mb-3"></i>
+                    <h2 class="metrics-value mb-1">2.6M+</h2>
+                    <p class="metrics-label mb-4 fs-5">Community Members</p>
+                    <p class="metrics-description small mt-2">
+                      Join our community of developers and designers
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-3 d-flex">
+                  <div class="metrics-card p-4 flex-fill d-flex flex-column">
+                    <i class="fa-solid fa-download fs-5 mb-3"></i>
+                    <h2 class="metrics-value mb-1">8.6M+</h2>
+                    <p class="metrics-label mb-4 fs-5">Cumulative Downloads</p>
+                    <p class="metrics-description small mt-2">
+                      Based on Material Tailwind and Creative Tim Products
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-3 d-flex">
+                  <div class="metrics-card p-4 flex-fill d-flex flex-column">
+                    <i class="fa-regular fa-star fs-5 mb-3"></i>
+                    <h2 class="metrics-value mb-1">48,000+</h2>
+                    <p class="metrics-label mb-4 fs-5">
+                      Github Cumulative Stars
+                    </p>
+                    <p class="metrics-description small mt-2">
+                      On 100+ Open Source Repositories and Projects
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xxl-3 d-flex">
+                  <div class="metrics-card p-4 flex-fill d-flex flex-column">
+                    <i class="fa-solid fa-cube fs-5 mb-3"></i>
+                    <h2 class="metrics-value mb-1">280,000+</h2>
+                    <p class="metrics-label mb-4 fs-5">Monthly NPM Downloads</p>
+                    <p class="metrics-description small mt-2">
+                      Including React, HTML, Tailwind CSS and more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="course-section">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h3>Continue Watching</h3>
+                <div class="d-flex gap-2">
+                  <span class="icon-circle" id="prev"
+                    ><i class="fa-solid fa-chevron-left"></i
+                  ></span>
+                  <span class="icon-circle" id="next"
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></span>
+                </div>
+              </div>
+              <!-- card -->
+              <div class="carousel-wrapper">
+                <div class="carousel-track d-flex gap-4">
+                  <div class="course-card bg-white">
+                    <div class="card-image">
+                      <img
+                        src="./Assets/Home_Assets/card-image.svg"
+                        alt="banner"
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between mb-2">
+                        <div class="base-badge mb-2">Crash Course</div>
+                        <div>
+                          <span
+                            ><i class="fa-solid fa-clock icon-primary"></i
+                          ></span>
+                          <span>7 Weeks</span>
+                        </div>
+                      </div>
+
+                      <h5 class="fw-bold mb-2">
+                        Complete batch for Group 4 & VAO
+                      </h5>
+                      <p class="text-muted fs-6">
+                        Our Complete Batch helps you confidently crack the TNPSC
+                        Group 4 & VAO exams
+                      </p>
+                      <div class="mb-4">
+                        <div
+                          class="d-flex justify-content-between align-items-center mb-2 fw-semibold"
+                        >
+                          <span>Progress</span>
+                          <span>50%</span>
+                        </div>
+
+                        <div class="progress">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 50%"
+                            aria-valuenow="50"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="text-muted mb-2">
+                          <span
+                            ><i class="fa-solid fa-circle-play icon-primary"></i
+                          ></span>
+                          <span>23 of 50 lessons</span>
+                        </p>
+                        <a
+                          href="./pages/course-beforeEnroll.html"
+                          class="base-button w-50"
+                          >Continue</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-card bg-white">
+                    <div class="card-image">
+                      <img
+                        src="./Assets/Home_Assets/card-image.svg"
+                        alt="banner"
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between mb-2">
+                        <div class="base-badge mb-2">Crash Course</div>
+                        <div>
+                          <span
+                            ><i class="fa-solid fa-clock icon-primary"></i
+                          ></span>
+                          <span>7 Weeks</span>
+                        </div>
+                      </div>
+
+                      <h5 class="fw-bold mb-2">
+                        Complete batch for Group 4 & VAO
+                      </h5>
+                      <p class="text-muted fs-6">
+                        Our Complete Batch helps you confidently crack the TNPSC
+                        Group 4 & VAO exams
+                      </p>
+                      <div class="mb-4">
+                        <div
+                          class="d-flex justify-content-between align-items-center mb-2 fw-semibold"
+                        >
+                          <span>Progress</span>
+                          <span>50%</span>
+                        </div>
+
+                        <div class="progress">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 50%"
+                            aria-valuenow="50"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="text-muted mb-2">
+                          <span
+                            ><i class="fa-solid fa-circle-play icon-primary"></i
+                          ></span>
+                          <span>23 of 50 lessons</span>
+                        </p>
+                        <a
+                          href="./pages/course-beforeEnroll.html"
+                          class="base-button w-50"
+                          >Continue</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-card bg-white">
+                    <div class="card-image">
+                      <img
+                        src="./Assets/Home_Assets/card-image.svg"
+                        alt="banner"
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between mb-2">
+                        <div class="base-badge mb-2">Crash Course</div>
+                        <div>
+                          <span
+                            ><i class="fa-solid fa-clock icon-primary"></i
+                          ></span>
+                          <span>7 Weeks</span>
+                        </div>
+                      </div>
+
+                      <h5 class="fw-bold mb-2">
+                        Complete batch for Group 4 & VAO
+                      </h5>
+                      <p class="text-muted fs-6">
+                        Our Complete Batch helps you confidently crack the TNPSC
+                        Group 4 & VAO exams
+                      </p>
+                      <div class="mb-4">
+                        <div
+                          class="d-flex justify-content-between align-items-center mb-2 fw-semibold"
+                        >
+                          <span>Progress</span>
+                          <span>50%</span>
+                        </div>
+
+                        <div class="progress">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 50%"
+                            aria-valuenow="50"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="text-muted mb-2">
+                          <span
+                            ><i class="fa-solid fa-circle-play icon-primary"></i
+                          ></span>
+                          <span>23 of 50 lessons</span>
+                        </p>
+                        <a
+                          href="./pages/course-beforeEnroll.html"
+                          class="base-button w-50"
+                          >Continue</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

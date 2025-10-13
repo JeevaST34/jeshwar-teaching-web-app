@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- meta tab -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jt - AfterEnroll</title>
@@ -27,7 +28,6 @@
     <!-- CSS -->
 
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <!-- Overlay for mobile menu -->
@@ -55,38 +55,8 @@
               />
             </div>
             <!-- nav-link -->
-            <ul class="nav flex-column menu">
-              <li class="nav-item mb-2">
-                <a href="../index.html" class="nav-link"
-                  ><i class="fas fa-home"></i> Dashboard</a
-                >
-              </li>
+            <ul class="nav flex-column menu" id="sidebarMenu"></ul>
 
-              <li class="nav-item mb-2">
-                <a href="./batches.html" class="nav-link">
-                  <i class="fa-solid fa-users"></i>
-                  Batches
-                </a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="./mycourse.html" class="nav-link active">
-                  <i class="fa-solid fa-book-open"></i>
-                  My Courses
-                </a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="./quiz.html" class="nav-link">
-                  <i class="fa-solid fa-list-check"></i>
-                  Test
-                </a>
-              </li>
-
-              <li class="nav-item mb-2">
-                <a href="./setting.html" class="nav-link"
-                  ><i class="fas fa-cog"></i> Settings</a
-                >
-              </li>
-            </ul>
             <div class="my-auto">
               <div
                 class="text-center p-3 border-light border-opacity-25 bg-white w-100 text-black mw-50 mx-auto rounded-2"
@@ -276,7 +246,7 @@
                         </div>
                         <div class="tab" data-tab="tab-2">
                           <i class="fa-solid fa-circle-play me-1"></i>
-                          Modules
+                          Classes
                         </div>
                         <div class="tab" data-tab="tab-3">
                           <i class="fa-solid fa-video me-1"></i>
@@ -923,9 +893,9 @@
                     <div class="mb-4">
                       <h4 class="fw-semibold mb-4">Course Content</h4>
                       <div
-                        class="d-flex justify-content-between align-items-center mb-2 fw-medium"
+                        class="d-flex justify-content-between align-items-center mb-2 fw-medium gap-2"
                       >
-                        <h5>Course Progress</h5>
+                        <h4 class="fs-5 text-black m-0">Course Progress</h4>
                         <span class="fw-bold">25%</span>
                       </div>
                       <div class="progress">

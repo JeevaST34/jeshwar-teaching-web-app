@@ -308,7 +308,7 @@ body {
 }
 .sidebar .logo {
   text-align: center;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .sidebar .menu a {
   color: white;

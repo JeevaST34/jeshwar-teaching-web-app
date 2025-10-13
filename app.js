@@ -1,3 +1,48 @@
+// nav-link
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuItems = [
+    { name: "Dashboard", icon: "fas fa-home", link: "../index.html" },
+    { name: "Batches", icon: "fa-solid fa-users", link: "./batches.html" },
+    {
+      name: "My Courses",
+      icon: "fa-solid fa-book-open",
+      link: "./mycourse.html",
+    },
+    { name: "Test", icon: "fa-solid fa-list-check", link: "./quiz.html" },
+    { name: "Settings", icon: "fas fa-cog", link: "./setting.html" },
+  ];
+
+  const menuContainer = document.getElementById("sidebarMenu");
+  if (!menuContainer) return;
+
+  // Detect active page by current filename
+  const currentPage = window.location.pathname.split("/").pop();
+
+  menuContainer.innerHTML = menuItems
+    .map((item) => {
+      let isActive = false;
+
+      // Make "My Courses" active for course-beforeEnroll and coursepage-afterEnroll
+      if (
+        item.name === "My Courses" &&
+        (currentPage.includes("course-beforeEnroll") ||
+          currentPage.includes("coursepage-afterEnroll"))
+      ) {
+        isActive = true;
+      } else if (currentPage === item.link.split("/").pop()) {
+        isActive = true;
+      }
+      return `
+        <li class="nav-item mb-2">
+          <a href="${item.link}" class="nav-link ${isActive ? "active" : ""}">
+            <i class="${item.icon}"></i> ${item.name}
+          </a>
+        </li>`;
+    })
+    .join("");
+});
+
 // =======================
 // Mobile Menu (Sidebar)
 // =======================
@@ -17,9 +62,8 @@ if (menuToggle && sidebar && overlay) {
   });
 }
 
-// =======================
 // Carousel
-// =======================
+
 const track = document.querySelector(".carousel-track");
 const cards = document.querySelectorAll(".course-card");
 const prevBtn = document.getElementById("prev");
@@ -76,9 +120,7 @@ if (track && cards.length > 0 && prevBtn && nextBtn) {
   updateLayout();
 }
 
-// =======================
 // Tabs + Sidebar Switch
-// =======================
 const tabs = document.querySelectorAll(".tabs-header .tab");
 const panes = document.querySelectorAll(".tab-content .tab-pane");
 
@@ -160,7 +202,7 @@ function toggleSection(element) {
   }
 }
 
-// ✅ Highlight the clicked content item
+// Highlight the clicked content item
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".content-item").forEach((item) => {
     item.addEventListener("click", function () {

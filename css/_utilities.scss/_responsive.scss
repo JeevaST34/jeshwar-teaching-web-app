@@ -1,3 +1,9 @@
+@media (min-width: 1536px) {
+  .col-3xl-3 {
+    width: 25%;
+  }
+}
+
 @media (min-width: 993px) {
   .menu-toggle,
   .overlay {
@@ -11,6 +17,9 @@
   .main-content {
     margin-left: 20%;
     width: 80%;
+  }
+  footer {
+    margin-left: 20%;
   }
 }
 
@@ -74,10 +83,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  .auth-right {
-    align-items: unset;
-    justify-content: unset;
-    gap: 40px;
+  .form-box .form-row {
+    display: block;
   }
   .login-box {
     margin: 0 auto;
@@ -87,8 +94,20 @@
     font-size: 0.8rem;
   }
 }
+@media screen and (max-width: 767px) {
+  .auth-right {
+    justify-content: unset;
+    gap: 40px;
+    .auth-logo {
+      margin-right: auto;
+    }
+  }
+}
 /* For mobile screens */
 @media screen and (max-width: 576px) {
+  .auth-logo {
+    width: 50%;
+  }
   .tabs-header {
     flex-direction: column;
     align-items: stretch;

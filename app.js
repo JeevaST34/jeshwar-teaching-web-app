@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
       icon: "fa-solid fa-book-open",
       link: "./mycourse.html",
     },
+    {
+      name: "Podcast",
+      icon: "fa-solid fa-podcast",
+      link: "./podcast.html",
+    },
     { name: "Test", icon: "fa-solid fa-list-check", link: "./quiz.html" },
     { name: "Settings", icon: "fas fa-cog", link: "./setting.html" },
   ];

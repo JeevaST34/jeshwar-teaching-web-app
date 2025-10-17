@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tab -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jt - Podcast</title>
+
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+  </head>
+  <body>
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <div class="container-fluid p-0">
+      <div class="row g-0 flex-nowrap">
+        <!-- Fixed Sidebar -->
+        <div class="sidebar" id="sidebar">
+          <div class="p-3 h-100 d-flex flex-column">
+            <a href="../index.html" class="logo">
+              <img
+                src="../Assets/Home_Assets/logo.svg"
+                alt="Logo"
+                class="img-fluid"
+              />
+            </a>
+            <!-- Search bar (Mobile only) -->
+            <div class="position-relative mb-3 d-block d-lg-none">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input
+                type="text"
+                class="form-control search-input"
+                placeholder="Search..."
+              />
+            </div>
+            <!-- nav-link -->
+            <ul class="nav flex-column menu" id="sidebarMenu"></ul>
+
+            <div class="my-auto">
+              <div
+                class="text-center p-3 border-light border-opacity-25 bg-white w-100 text-black mw-50 mx-auto rounded-2"
+              >
+                <img
+                  src="../Assets/Home_Assets/Nav Bar_Image.svg"
+                  alt="Premium"
+                  class="premium-image mb-3"
+                />
+                <h4>Get Premium Now!</h4>
+                <p>Explore our new features by subscribing our package</p>
+                <a href="#" class="base-button">Subscribe</a>
+              </div>
+            </div>
+
+            <div class="menu mt-auto">
+              <a href="./sign-in.html" class="nav-link"
+                ><i class="fa-solid fa-right-from-bracket"></i> Log Out</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content mh-100vh position-relative">
+          <div class="container-fluid p-4">
+            <header>
+              <!-- Mobile menu toggle button -->
+              <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div
+                class="d-flex align-items-center justify-content-lg-between justify-content-end mb-lg-4"
+              >
+                <!-- Search bar -->
+                <div
+                  class="position-relative flex-grow-1 me-3 d-none d-lg-block"
+                >
+                  <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                  <input
+                    type="text"
+                    class="form-control search-input"
+                    placeholder="What do you want to learn"
+                  />
+                </div>
+
+                <!-- Icons -->
+                <div class="d-flex align-items-center gap-3 me-3">
+                  <span class="icon-circle">
+                    <i class="fa-regular fa-bell"></i>
+                  </span>
+                </div>
+                <!-- Profile -->
+                <div>
+                  <a
+                    href="./setting.html"
+                    class="d-flex align-items-center gap-2 text-black text-decoration-none curser-pointer"
+                  >
+                    <img
+                      src="../Assets/Home_Assets/Rajesh K.svg"
+                      alt="Profile"
+                      class="profile-img"
+                    />
+                    <span class="fw-semibold">Rajesh K</span>
+                  </a>
+                </div>
+              </div>
+            </header>
+            <section class="mb-5">
+              <div class="d-flex mb-2">
+                <div class="hero-section-1 p-4 rounded-4 text-white flex-fill">
+                  <div class="base-badge w-fit rounded-pill mb-2 fs-7">
+                    ✨ Free to listen
+                  </div>
+                  <h3 class="mb-3">100% Right Now!</h3>
+                  <p class="mb-3 fs-6">
+                    All Podcast are currently free to access
+                  </p>
+                  <a
+                    class="button-white d-flex w-fit rounded-pill align-items-center gap-2 border border-1"
+                  >
+                    <i class="fa-solid fa-play fs-6"></i>
+                    Start Listening
+                  </a>
+                </div>
+              </div>
+            </section>
+            <!-- Podcast Card -->
+            <section>
+              <div class="row">
+                <!-- card - 1 -->
+                <div class="col-xl-6 mb-3">
+                  <div
+                    class="bg-white row p-3 gap-3 align-items-center mx-0 rounded-4"
+                  >
+                    <div class="col-sm-4 card-image">
+                      <img
+                        src="../assets/page-assets/podcast-image.avif"
+                        alt="Podcast Thumbnail"
+                        class="img-fluid rounded-2"
+                      />
+                    </div>
+                    <div class="col-sm-7 card-body">
+                      <h6 class="fw-bold mb-1">
+                        The 3-Month Plan: A Strategy for TNPSC Group 2 Prelims
+                      </h6>
+                      <small class="text-muted lh-base">
+                        Provide practical study tips, motivation, and proven
+                        strategies.
+                      </small>
+
+                      <div class="d-flex align-items-center my-2">
+                        <span class="base-badge me-2">History</span>
+                        <small class="text-muted">06 Feb • 2 hrs 15 mins</small>
+                      </div>
+
+                      <div class="d-flex align-items-center gap-3">
+                        <a href="#" class="text-decoration-none primary-text"
+                          ><</a
+                        >
+                        <div class="progress custom-progress">
+                          <div
+                            class="progress-bar rounded-pill"
+                            role="progressbar"
+                            style="width: 70%"
+                            aria-valuenow="70"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <small class="text-muted">22:25</small>
+                        <a href="#" class="text-decoration-none primary-text"
+                          >></a
+                        >
+                        <a href="#" class="text-decoration-none h-28">
+                          <i
+                            class="fa-solid fa-circle-play primary-text fs-4"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="col-xl-6 mb-3">
+                  <div
+                    class="bg-white row p-3 gap-3 align-items-center mx-0 rounded-4"
+                  >
+                    <div class="col-sm-4 card-image">
+                      <img
+                        src="../assets/page-assets/podcast-image.avif"
+                        alt="Podcast Thumbnail"
+                        class="img-fluid rounded-2"
+                      />
+                    </div>
+                    <div class="col-sm-7 card-body">
+                      <h6 class="fw-bold mb-1">
+                        Daily Motivation: How to Build Consistent Study Habits
+                      </h6>
+                      <small class="text-muted lh-base">
+                        Learn how to stay motivated every day with small
+                        improvements.
+                      </small>
+
+                      <div class="d-flex align-items-center my-2">
+                        <span class="base-badge me-2">Motivation</span>
+                        <small class="text-muted">12 Mar • 1 hr 40 mins</small>
+                      </div>
+
+                      <div class="d-flex align-items-center gap-3">
+                        <a href="#" class="text-decoration-none primary-text"
+                          ><</a
+                        >
+                        <div class="progress custom-progress">
+                          <div
+                            class="progress-bar rounded-pill"
+                            role="progressbar"
+                            style="width: 70%"
+                            aria-valuenow="70"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <small class="text-muted">22:25</small>
+                        <a href="#" class="text-decoration-none primary-text"
+                          >></a
+                        >
+                        <a href="#" class="text-decoration-none h-28">
+                          <i
+                            class="fa-solid fa-circle-play primary-text fs-4"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card - 3 -->
+                <div class="col-xl-6 mb-3">
+                  <div
+                    class="bg-white row p-3 gap-3 align-items-center mx-0 rounded-4"
+                  >
+                    <div class="col-sm-4 card-image">
+                      <img
+                        src="../assets/page-assets/podcast-image.avif"
+                        alt="Podcast Thumbnail"
+                        class="img-fluid rounded-2"
+                      />
+                    </div>
+                    <div class="col-sm-7 card-body">
+                      <h6 class="fw-bold mb-1">
+                        The 3-Month Plan: A Strategy for TNPSC Group 2 Prelims
+                      </h6>
+                      <small class="text-muted lh-base">
+                        Provide practical study tips, motivation, and proven
+                        strategies.
+                      </small>
+
+                      <div class="d-flex align-items-center my-2">
+                        <span class="base-badge me-2">History</span>
+                        <small class="text-muted">06 Feb • 2 hrs 15 mins</small>
+                      </div>
+
+                      <div class="d-flex align-items-center gap-3">
+                        <a href="#" class="text-decoration-none primary-text"
+                          ><</a
+                        >
+                        <div class="progress custom-progress">
+                          <div
+                            class="progress-bar rounded-pill"
+                            role="progressbar"
+                            style="width: 70%"
+                            aria-valuenow="70"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <small class="text-muted">22:25</small>
+                        <a href="#" class="text-decoration-none primary-text"
+                          >></a
+                        >
+                        <a href="#" class="text-decoration-none h-28">
+                          <i
+                            class="fa-solid fa-circle-play primary-text fs-4"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card- 4 -->
+                <div class="col-xl-6 mb-3">
+                  <div
+                    class="bg-white row p-3 gap-3 align-items-center mx-0 rounded-4"
+                  >
+                    <div class="col-sm-4 card-image">
+                      <img
+                        src="../assets/page-assets/podcast-image.avif"
+                        alt="Podcast Thumbnail"
+                        class="img-fluid rounded-2"
+                      />
+                    </div>
+                    <div class="col-sm-7 card-body">
+                      <h6 class="fw-bold mb-1">
+                        Daily Motivation: How to Build Consistent Study Habits
+                      </h6>
+                      <small class="text-muted lh-base">
+                        Learn how to stay motivated every day with small
+                        improvements.
+                      </small>
+
+                      <div class="d-flex align-items-center my-2">
+                        <span class="base-badge me-2">Motivation</span>
+                        <small class="text-muted">12 Mar • 1 hr 40 mins</small>
+                      </div>
+
+                      <div class="d-flex align-items-center gap-3">
+                        <a href="#" class="text-decoration-none primary-text"
+                          ><</a
+                        >
+                        <div class="progress custom-progress">
+                          <div
+                            class="progress-bar rounded-pill"
+                            role="progressbar"
+                            style="width: 70%"
+                            aria-valuenow="70"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                        <small class="text-muted">22:25</small>
+                        <a href="#" class="text-decoration-none primary-text"
+                          >></a
+                        >
+                        <a href="#" class="text-decoration-none h-28">
+                          <i
+                            class="fa-solid fa-circle-play primary-text fs-4"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+             <footer class="py-2 px-2 main-content">
+              <div class="container-fluid d-flex justify-content-between">
+                <div>© 2025 JT Learning. All rights reserved.</div>
+                <div class="d-flex justify-content-between">
+                  <a
+                    href="../pages/About.html"
+                    class="me-5 text-decoration-none text-white"
+                    >About Us</a
+                  >
+                  <a
+                    href="../pages/privacy-policy.html"
+                    class="me-5 text-decoration-none text-white"
+                    >Privacy Policy</a
+                  >
+                  <a
+                    href="../pages/terms-condition.html"
+                    class="me-5 text-decoration-none text-white"
+                    >Terms and Condition</a
+                  >
+                  <a
+                    href="../pages/refund-policy.html"
+                    class="text-decoration-none text-white"
+                    >Refund Policy</a
+                  >
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../app.js"></script>
+  </body>
+</html>

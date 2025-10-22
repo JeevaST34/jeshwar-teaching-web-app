@@ -83,6 +83,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    padding-bottom: 70px;
+  }
   .form-box .form-row {
     display: block;
   }
@@ -92,6 +95,24 @@
   .speed,
   .time {
     font-size: 0.8rem;
+  }
+  .video-wrap {
+    height: 300px;
+  }
+  footer .container-fluid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  footer .container-fluid > div {
+    margin: 5px 0;
+    gap: 5px !important;
+  }
+
+  footer a {
+    margin: 5px !important;
   }
 }
 @media screen and (max-width: 767px) {
@@ -146,5 +167,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 6px;
+  }
+  footer {
+    display: none;
   }
 }

@@ -56,6 +56,30 @@ button .join-icon {
   font-size: 0.8rem;
 }
 .badge-danger {
+  background: #d4183d;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 25px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.badge-success {
+  background: #12983f;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 25px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.badge-light {
+  background: #eceef2;
+  color: #000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 25px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.badge-red {
   background: rgb(255, 207, 207);
   color: rgba(143, 0, 0, 0.822);
   padding: 0.25rem 0.5rem;
@@ -63,7 +87,6 @@ button .join-icon {
   font-size: 0.7rem;
   font-weight: 600;
 }
-
 .points-badge {
   background-color: #5c5bc0;
   color: #ffffff;

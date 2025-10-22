@@ -1,0 +1,26 @@
+.table thead th {
+  font-weight: 600;
+  font-size: 15px;
+  background-color: #f9fafb;
+  padding: 14px 16px;
+}
+
+.table tbody td {
+  padding: 14px 16px;
+  font-size: 14.5px;
+}
+
+.table tr:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive table {
+  min-width: 600px;
+  border-collapse: collapse;
+}

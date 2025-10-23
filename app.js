@@ -1,6 +1,5 @@
 // nav-link
 
-// nav-link
 document.addEventListener("DOMContentLoaded", () => {
   const menuItems = [
     { name: "Dashboard", icon: "fas fa-home", link: "../index.html" },
@@ -22,33 +21,38 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuContainer = document.getElementById("sidebarMenu");
   if (!menuContainer) return;
 
-  // Detect active page (works with .html, clean URLs, and trailing slashes)
-  let currentPath = window.location.pathname;
-  let currentPage = currentPath.split("/").pop() || "index.html";
-  currentPage = currentPage
-    .replace(".html", "")
-    .replace(/\/$/, "")
-    .toLowerCase();
+  // Get normalized current path
+  let currentPath = window.location.pathname.toLowerCase().replace(/\/$/, ""); // remove trailing slash
+
+  // Handle root or index
+  if (currentPath === "" || currentPath === "/") {
+    currentPath = "/index.html";
+  }
 
   menuContainer.innerHTML = menuItems
     .map((item) => {
-      const itemPage = item.link
-        .split("/")
-        .pop()
-        .replace(".html", "")
-        .toLowerCase();
       let isActive = false;
 
-      // Make "My Courses" active for related pages
+      // Normalize item link
+      let itemPath = item.link
+        .replace("./", "/")
+        .replace("../", "/")
+        .replace(".html", "")
+        .toLowerCase();
+
+      let normalizedCurrent = currentPath.replace(".html", "");
+
+      // Match logic
       if (
         item.name === "My Courses" &&
-        (currentPath.includes("course-beforeEnroll") ||
-          currentPath.includes("coursepage-afterEnroll"))
+        (normalizedCurrent.includes("course-beforeenroll") ||
+          normalizedCurrent.includes("coursepage-afterenroll"))
       ) {
         isActive = true;
-      }
-      // Match for both clean and .html URLs
-      else if (currentPage === itemPage || currentPath.includes(itemPage)) {
+      } else if (
+        normalizedCurrent.endsWith(itemPath) ||
+        normalizedCurrent.includes(itemPath)
+      ) {
         isActive = true;
       }
 
@@ -60,6 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
         </li>`;
     })
     .join("");
+
+  // Debug (optional, uncomment for Netlify check)
+  // console.log("Current Path:", currentPath);
 });
 
 // =======================

@@ -1,5 +1,6 @@
 // nav-link
 
+// nav-link
 document.addEventListener("DOMContentLoaded", () => {
   const menuItems = [
     { name: "Dashboard", icon: "fas fa-home", link: "../index.html" },
@@ -21,23 +22,36 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuContainer = document.getElementById("sidebarMenu");
   if (!menuContainer) return;
 
-  // Detect active page by current filename
-  const currentPage = window.location.pathname.split("/").pop();
+  // Detect active page (works with .html, clean URLs, and trailing slashes)
+  let currentPath = window.location.pathname;
+  let currentPage = currentPath.split("/").pop() || "index.html";
+  currentPage = currentPage
+    .replace(".html", "")
+    .replace(/\/$/, "")
+    .toLowerCase();
 
   menuContainer.innerHTML = menuItems
     .map((item) => {
+      const itemPage = item.link
+        .split("/")
+        .pop()
+        .replace(".html", "")
+        .toLowerCase();
       let isActive = false;
 
-      // Make "My Courses" active for course-beforeEnroll and coursepage-afterEnroll
+      // Make "My Courses" active for related pages
       if (
         item.name === "My Courses" &&
-        (currentPage.includes("course-beforeEnroll") ||
-          currentPage.includes("coursepage-afterEnroll"))
+        (currentPath.includes("course-beforeEnroll") ||
+          currentPath.includes("coursepage-afterEnroll"))
       ) {
         isActive = true;
-      } else if (currentPage === item.link.split("/").pop()) {
+      }
+      // Match for both clean and .html URLs
+      else if (currentPage === itemPage || currentPath.includes(itemPage)) {
         isActive = true;
       }
+
       return `
         <li class="nav-item mb-2">
           <a href="${item.link}" class="nav-link ${isActive ? "active" : ""}">

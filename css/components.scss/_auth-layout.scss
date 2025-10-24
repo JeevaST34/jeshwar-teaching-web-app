@@ -1,11 +1,6 @@
 /* Left side image */
 .auth-left {
   flex: 1;
-  background-image: linear-gradient(
-      rgba(var(--primary-color-rgb), 0.1),
-      rgba(var(--primary-color-rgb), 0.5)
-    ),
-    url("../assets/auth_assets/auth-image.avif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -36,4 +31,42 @@
   flex-direction: column;
   padding: 2rem;
   overflow: auto;
+}
+
+.signIn-img {
+  background-image: linear-gradient(
+      rgba(var(--primary-color-rgb), 0.2),
+      rgba(var(--primary-color-rgb), 0.5)
+    ),
+    url("../assets/auth_assets/signIn-img.svg");
+}
+
+.createAcc-img {
+  background-image: linear-gradient(
+      rgba(var(--primary-color-rgb), 0.2),
+      rgba(var(--primary-color-rgb), 0.5)
+    ),
+    url("../assets/auth_assets/createAcc-img.svg");
+}
+
+.reset-img {
+  background-image: linear-gradient(
+      rgba(var(--primary-color-rgb), 0.2),
+      rgba(var(--primary-color-rgb), 0.5)
+    ),
+    url("../assets/auth_assets/reset-img.svg");
+}
+.confirmation-img {
+  background-image: linear-gradient(
+      rgba(var(--primary-color-rgb), 0.2),
+      rgba(var(--primary-color-rgb), 0.5)
+    ),
+    url("../assets/auth_assets/confirmation-img.svg");
+}
+.newPwd-img {
+  background-image: linear-gradient(
+      rgba(var(--primary-color-rgb), 0.2),
+      rgba(var(--primary-color-rgb), 0.5)
+    ),
+    url("../assets/auth_assets/newPwd-img.svg");
 }

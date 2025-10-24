@@ -1,5 +1,4 @@
 // nav-link
-
 document.addEventListener("DOMContentLoaded", () => {
   const menuItems = [
     { name: "Dashboard", icon: "fas fa-home", link: "../index.html" },
@@ -239,6 +238,71 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       // add active to clicked one
       this.classList.add("active");
+    });
+  });
+});
+
+// Preview button functionality
+document.addEventListener("DOMContentLoaded", () => {
+  // Preview button click handler - using class selector instead of ID
+  document.querySelectorAll(".preview-btn").forEach((button) => {
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      // Get the lesson name from data attribute or from the span
+      const lessonName =
+        this.getAttribute("data-lesson") ||
+        this.closest(".content-item").querySelector("span:nth-child(2)")
+          ?.textContent ||
+        "Lesson Preview";
+
+      // Get existing preview content by ID
+      const previewPane = document.getElementById("preview-content");
+
+      if (previewPane) {
+        // Update the lesson name in preview content
+        const lessonNameElement = previewPane.querySelector("#lesson-name");
+        if (lessonNameElement) {
+          lessonNameElement.textContent = lessonName;
+        }
+
+        // Hide all tab panes
+        document.querySelectorAll(".tab-pane").forEach((pane) => {
+          pane.classList.remove("active");
+        });
+
+        // Show the preview content
+        previewPane.classList.add("active");
+
+        // Update the active tab to indicate we're in preview mode
+        document.querySelectorAll(".tab").forEach((tab) => {
+          tab.classList.remove("active");
+        });
+
+        // Add a visual indicator that we're in preview mode
+        const classesTab = document.querySelector('.tab[data-tab="tab-2"]');
+        if (classesTab) {
+          classesTab.classList.add("active");
+        }
+
+        // Change sidebar to live session sidebar
+        const sidebarContents = {
+          "tab-1": document.getElementById("overviewSidebarContent"),
+          "tab-2": document.getElementById("modulesSidebarContent"),
+          "tab-3": document.getElementById("sessionSidebarContent"),
+        };
+
+        // Hide all sidebar contents
+        Object.values(sidebarContents).forEach((el) => {
+          if (el) el.classList.add("d-none");
+        });
+
+        // Show the session sidebar (live session sidebar)
+        const sessionSidebar = sidebarContents["tab-3"];
+        if (sessionSidebar) {
+          sessionSidebar.classList.remove("d-none");
+        }
+      }
     });
   });
 });

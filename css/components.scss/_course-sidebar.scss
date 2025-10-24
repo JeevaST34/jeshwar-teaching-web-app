@@ -1,3 +1,10 @@
+.createAcc-img {
+  background-image: linear-gradient(
+      rgba(var(--primary-color-rgb), 0.2),
+      rgba(var(--primary-color-rgb), 0.5)
+    ),
+    url("../assets/auth_assets/createAcc-img.svg");
+}
 .unit-card {
   border-bottom: 1px solid var(--border-color);
 
@@ -38,6 +45,7 @@
       &.active {
         background-color: var(--primary-lightest-color);
         border-left: 3px solid var(--primary-color);
+        color: var(--primary-color);
 
         .fa-play-circle {
           color: var(--primary-color);
